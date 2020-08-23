@@ -52,6 +52,7 @@ namespace Web.Controllers
             _cache = cache;
             _searchService = searchService;
             _blobService = storageService;
+            //The environment should be removed
             _envName = environment.Value.Name;
             _searchIndexName = _envName + "-items";
             _batchRange = 32000;
